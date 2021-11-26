@@ -1,0 +1,349 @@
+# Arquivo gerado por CMAKE: Não edite!
+# Gerado por "Unix Makefiles" Generator, CMake Version 3.16
+
+# Comando feito quando não é mandado dados como argumentos.
+default_target: all
+
+.PHONY : default_target
+
+# Permite apenas um "make -f Makefile2" de cada vez, mas passa por paralelismo.
+.NOTPARALLEL:
+
+
+#=============================================================================
+# Alvos especiais fornecidos pela cmake.
+
+# Desativacao implicita de regras para que os alvos canonicos funcionem.
+.SUFFIXES:
+
+
+# Remove algumas regras do gmake que o .SUFFIXES nao remove.
+SUFFIXES =
+
+.SUFFIXES: .hpux_make_needs_suffix_list
+
+
+# Suprimi a exibicao dos comandos execultados.
+$(VERBOSE).SILENT:
+
+
+# Um alvo que esta sempre desatualizado.
+cmake_force:
+
+.PHONY : cmake_force
+
+#=============================================================================
+# Definir variaveis de ambiente para a construcao.
+
+# O shell na qual é execultado as regras do make.
+SHELL = /bin/sh
+
+# O CMake executavel.
+CMAKE_COMMAND = /usr/bin/cmake
+
+# O comando para remover arquivos.
+RM = /usr/bin/cmake -E remove -f
+
+# Escapando para caracteres espaciais. 
+EQUALS = =
+
+# O directório de fontes do nível superior em que o CMake foi executado.
+CMAKE_SOURCE_DIR = "/home/mk/Documents/UTFPR/6 Periodo/Eng Software 1/cod/xournalpp"
+
+# O directório de construção de nível superior sobre o qual foi executado o CMake.
+CMAKE_BINARY_DIR = "/home/mk/Documents/UTFPR/6 Periodo/Eng Software 1/cod/xournalpp/build"
+
+#=============================================================================
+# Metas fornecidas globalmente pela CMake.
+
+# Regra especial para a install/local do alvo/destino.
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Regra especial para a install/local do alvo/destino.
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Regra especial para o edit_cache do alvo/destino.
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Regra especial para o edit_cache do alvo/destino.
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Regra especial para a package_source do alvo/destino.
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/mk/Documents/UTFPR/6\ Periodo/Eng\ Software\ 1/cod/xournalpp/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Regra especial para o package_source do alvo/destino.
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
+# Regra especial para a install do alvo/destino.
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Regra especial para a install do alvo/destino.
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Regra especial para a list_install_components do alvo/destino.
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"xournalpp\" \"xournalpp-thumbnailer\""
+.PHONY : list_install_components
+
+# Regra especial para a list_install_components do alvo/destino.
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Regra especial para a rebuild_cache do alvo/destino.
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Regra especial para a rebuild_cache do alvo/destino.
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Regra especial para o package do alvo/destino.
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+#Regra especial para o package do alvo/destino.
+package/fast: package
+
+.PHONY : package/fast
+
+# Regra especial para install/strip do alvo/destino.
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Regra especial para install/strip do alvo/destino.
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Main de todos os alvo/destinos.
+all: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mk/Documents/UTFPR/6 Periodo/Eng Software 1/cod/xournalpp/build/CMakeFiles" "/home/mk/Documents/UTFPR/6 Periodo/Eng Software 1/cod/xournalpp/build/CMakeFiles/progress.marks"
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mk/Documents/UTFPR/6 Periodo/Eng Software 1/cod/xournalpp/build/CMakeFiles" 0
+.PHONY : all
+
+# Limpar o alvo/destino principal.
+clean:
+	$(MAKE) -f CMakeFiles/Makefile2 clean
+.PHONY : clean
+
+# Limpar o alvo/destino principal.
+clean/fast: clean
+
+.PHONY : clean/fast
+
+# Preparar alvos/destino para instalacao.
+preinstall: all
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+.PHONY : preinstall
+
+# Preparar alvos/destino para instalacao.
+preinstall/fast:
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+.PHONY : preinstall/fast
+
+# Limpar dependencias
+depend:
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+.PHONY : depend
+
+#=============================================================================
+# Regras de destinos para destinos nomeados package_documentation
+
+# Construir regra para o destino/alvo.
+package_documentation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 package_documentation
+.PHONY : package_documentation
+
+# Construir regra rapida para o alvo/destino.
+package_documentation/fast:
+	$(MAKE) -f CMakeFiles/package_documentation.dir/build.make CMakeFiles/package_documentation.dir/build
+.PHONY : package_documentation/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por uninstall
+
+# Construir regra para o destino/alvo.
+uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# Construir regra rapida para o alvo/destino.
+uninstall/fast:
+	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por translations
+
+# Construir regra para o destino/alvo.
+translations: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 translations
+.PHONY : translations
+
+# Construir regra rapida para o alvo/destino.
+translations/fast:
+	$(MAKE) -f po/CMakeFiles/translations.dir/build.make po/CMakeFiles/translations.dir/build
+.PHONY : translations/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por pot
+
+# Construir regra para o destino/alvo.
+pot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pot
+.PHONY : pot
+
+# Construir regra rapida para o alvo/destino.
+pot/fast:
+	$(MAKE) -f po/CMakeFiles/pot.dir/build.make po/CMakeFiles/pot.dir/build
+.PHONY : pot/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por xournalpp
+
+# Construir regra para o destino/alvo.
+xournalpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xournalpp
+.PHONY : xournalpp
+
+# Construir regra rapida para o alvo/destino.
+xournalpp/fast:
+	$(MAKE) -f src/CMakeFiles/xournalpp.dir/build.make src/CMakeFiles/xournalpp.dir/build
+.PHONY : xournalpp/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por xournalpp-core
+
+# Construir regra para o destino/alvo.
+xournalpp-core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xournalpp-core
+.PHONY : xournalpp-core
+
+# Construir regra rapida para o alvo/destino.
+xournalpp-core/fast:
+	$(MAKE) -f src/CMakeFiles/xournalpp-core.dir/build.make src/CMakeFiles/xournalpp-core.dir/build
+.PHONY : xournalpp-core/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por desktop-uninstall-thumbnailer
+
+# Construir regra para o destino/alvo.
+desktop-uninstall-thumbnailer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 desktop-uninstall-thumbnailer
+.PHONY : desktop-uninstall-thumbnailer
+
+# Construir regra rapida para o alvo/destino.
+desktop-uninstall-thumbnailer/fast:
+	$(MAKE) -f src/xoj-preview-extractor/CMakeFiles/desktop-uninstall-thumbnailer.dir/build.make src/xoj-preview-extractor/CMakeFiles/desktop-uninstall-thumbnailer.dir/build
+.PHONY : desktop-uninstall-thumbnailer/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por desktop-install-thumbnailer
+
+# Construir regra para o destino/alvo.
+desktop-install-thumbnailer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 desktop-install-thumbnailer
+.PHONY : desktop-install-thumbnailer
+
+# Construir regra rapida para o alvo/destino.
+desktop-install-thumbnailer/fast:
+	$(MAKE) -f src/xoj-preview-extractor/CMakeFiles/desktop-install-thumbnailer.dir/build.make src/xoj-preview-extractor/CMakeFiles/desktop-install-thumbnailer.dir/build
+.PHONY : desktop-install-thumbnailer/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por named xournalpp-thumbnailer
+
+# Construir regra para o destino/alvo.
+xournalpp-thumbnailer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xournalpp-thumbnailer
+.PHONY : xournalpp-thumbnailer
+
+# Construir regra rapida para o alvo/destino.
+xournalpp-thumbnailer/fast:
+	$(MAKE) -f src/xoj-preview-extractor/CMakeFiles/xournalpp-thumbnailer.dir/build.make src/xoj-preview-extractor/CMakeFiles/xournalpp-thumbnailer.dir/build
+.PHONY : xournalpp-thumbnailer/fast
+
+#=============================================================================
+# Regras de destinos para destinos nomeados por util
+
+# Construir regra para o destino/alvo.
+util: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 util
+.PHONY : util
+
+# Construir regra rapida para o alvo/destino.
+util/fast:
+	$(MAKE) -f src/util/CMakeFiles/util.dir/build.make src/util/CMakeFiles/util.dir/build
+.PHONY : util/fast
+
+# Ajuda alvo/destino # Help Target
+help:
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... install/local"
+	@echo "... edit_cache"
+	@echo "... package_source"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... package"
+	@echo "... package_documentation"
+	@echo "... uninstall"
+	@echo "... install/strip"
+	@echo "... translations"
+	@echo "... pot"
+	@echo "... xournalpp"
+	@echo "... xournalpp-core"
+	@echo "... desktop-uninstall-thumbnailer"
+	@echo "... desktop-install-thumbnailer"
+	@echo "... xournalpp-thumbnailer"
+	@echo "... util"
+.PHONY : help
+
+
+
+#=============================================================================
+# Destino especial para operacao de limpeza do make.
+
+# Regra especial para executar CMake para verificar a integridade do sistema de construção.
+# Nenhuma regra que dependa disto pode ter comandos que venham de uma lista de arquivo.
+# Porque podem ser regenerados.
+
+cmake_check_build_system:
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+.PHONY : cmake_check_build_system
+
